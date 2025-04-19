@@ -9,7 +9,6 @@ namespace API.Controllers
     [Route("api/v1/[controller]")]
     public class UsersController(DataContext context) : ControllerBase
     {
-        //Always practise to use async 
         [HttpGet("GetUsers")]
         public async Task<ActionResult<IEnumerable<AppUser>>> GerUsers()
         {
